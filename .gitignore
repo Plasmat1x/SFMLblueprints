@@ -1,5 +1,5 @@
 #folders
-.inner/
+inner/
 bin/
 include/
 lib/
@@ -7,3 +7,4 @@ lib/
 #visual studio
 inter/
 .vs/
+SFMLblueprints/Debug/
