@@ -3,6 +3,7 @@ inner/
 bin/
 include/
 lib/
+liba/
 
 #visual studio
 inter/
