@@ -3,6 +3,7 @@
 #include <SFML/Graphics.hpp>
 
 #include "Player.h"
+#include "Configuration.h"
 
 class Game
 {
@@ -24,6 +25,8 @@ private:
 
 int main(int argc, char* argv[])
 {
+    Configuration::initialize();
+
     Game game;
     game.run(60);
 

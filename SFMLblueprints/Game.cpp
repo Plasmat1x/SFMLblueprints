@@ -3,7 +3,7 @@
 Game::Game() :
     _window(sf::VideoMode(800, 600), "StarS")
 {
-    _player.setPosition(80, 80);
+    _player.setPosition(100, 100);
 }
 
 void Game::run(int frame_per_second)
@@ -42,6 +42,7 @@ void Game::processEvents()
             if (event.key.code == sf::Keyboard::Escape) _window.close();
         }
     }
+
     _player.processEvents();
 }
 

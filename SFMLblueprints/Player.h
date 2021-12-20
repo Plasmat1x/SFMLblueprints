@@ -3,10 +3,10 @@
 
 #include <SFML/Graphics.hpp>
 
-#include <utility>
-#include <cmath>
+#include "ActionTarget.h"
+#include "Configuration.h"
 
-class Player : public sf::Drawable
+class Player : public sf::Drawable, public ActionTarget<int>
 {
 public:
     Player(const Player&) = delete;
@@ -14,19 +14,29 @@ public:
     Player();
 
     template<typename ... Args>
-    void setPosition(Args&& ... args) {
-        _shape.setPosition(std::forward<Args>(args)...);
-    }
+    void setPosition(Args&& ... args);
 
     void processEvents();
     void update(sf::Time deltaTime);
-    bool isMoving;
-    int rotation;
 
 private:
     virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
-    sf::RectangleShape _shape;
+
+    sf::Sprite _ship;
     sf::Vector2f _velocity;
+
+    bool _isMoving;
+    int _rotation;
+
+    static ActionMap<int> _playerInputs;
 
 };
 
+//#include "Player.tpl"
+#include <utility>
+
+template<typename ... Args>
+void Player::setPosition(Args&& ... args)
+{
+    _ship.setPosition(std::forward<Args>(args)...);
+}
