@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Game" Collapsed="true">
+    <Position X="18.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAgAEAiAAAAAAAAAAAAAAAQgAAAABAAAgAAAUAEA=</HashCode>
+      <FileName>Game.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Player" Collapsed="true">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAABAAEAAAACAAQAAAAAAAgAQAAAACAAAAgAQAEAQA=</HashCode>
+      <FileName>Player.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Action" Collapsed="true">
+    <Position X="17" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAQAAAAAAAAAIAAAAAAAAAAw=</HashCode>
+      <FileName>Action.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ActionTarget&lt;T&gt;" Collapsed="true">
+    <Position X="0.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAKAAAAAAAAABAAAAAYAAACAAQAAgAAAABAA=</HashCode>
+      <FileName>ActionTarget.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ActionMap&lt;T&gt;" Collapsed="true">
+    <Position X="18.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAQAAAAAAAAAAAAEAgAAABAAA=</HashCode>
+      <FileName>ActionMap.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ResourceManager&lt;RESOURCE, IDENTIFIER&gt;" Collapsed="true">
+    <Position X="20.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAUAAAAAAAAAAAAEAgAAAAAAA=</HashCode>
+      <FileName>ResourceManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ResourceManager&lt;sf::Music, IDENTIFIER&gt;" Collapsed="true">
+    <Position X="17" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAUAAAAAAAAAAAAEAgAAAAAAA=</HashCode>
+      <FileName>ResourceManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Configuration" Collapsed="true">
+    <Position X="17" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAQAECEABAgAAAAMAQACQAAMEABDBgAAgAAAQACA=</HashCode>
+      <FileName>Configuration.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="World" Collapsed="true">
+    <Position X="18.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AUAAAAAIABQIAAAAAIMAAAAAAAACAAAAABAgAGEGAAA=</HashCode>
+      <FileName>World.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entity" Collapsed="true">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EQAAIAAAAAAAAAAIAAIAAAACACAAAAAAAAEgAAEECUA=</HashCode>
+      <FileName>Entity.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Collision" Collapsed="true">
+    <Position X="20.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAABAAAAgAAAAAAA=</HashCode>
+      <FileName>Collision.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Enemy" Collapsed="true">
+    <Position X="5.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAASA=</HashCode>
+      <FileName>Enemy.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Meteor" Collapsed="true">
+    <Position X="3.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAgAAAEAAA=</HashCode>
+      <FileName>Meteor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BigMeteor" Collapsed="true">
+    <Position X="3.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAASA=</HashCode>
+      <FileName>Meteor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MediumMeteor" Collapsed="true">
+    <Position X="5.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAASA=</HashCode>
+      <FileName>Meteor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmallMeteor" Collapsed="true">
+    <Position X="1" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAASA=</HashCode>
+      <FileName>Meteor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Shoot" Collapsed="true">
+    <Position X="13.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAABAAAAAAAAAAAAAAAAAgAAAEAAA=</HashCode>
+      <FileName>Shoot.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShootPlayer" Collapsed="true">
+    <Position X="12.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Shoot.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShootSaucer" Collapsed="true">
+    <Position X="14.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ASAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Shoot.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Saucer" Collapsed="true">
+    <Position X="9" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAIAgAAAEAQA=</HashCode>
+      <FileName>Saucer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BigSaucer" Collapsed="true">
+    <Position X="7.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAACA=</HashCode>
+      <FileName>Saucer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmallSaucer" Collapsed="true">
+    <Position X="10" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEACA=</HashCode>
+      <FileName>Saucer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

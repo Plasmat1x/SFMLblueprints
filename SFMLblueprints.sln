@@ -12,16 +12,32 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SFMLblueprint2", "SFMLblueprint2\SFMLblueprint2.vcxproj", "{D9F66F63-7A21-4176-8D63-861D3E5D17CE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
 		Release|x64 = Release|x64
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{A9864461-A475-40B8-A62E-54D04423D527}.Debug|x64.ActiveCfg = Debug|x64
 		{A9864461-A475-40B8-A62E-54D04423D527}.Debug|x64.Build.0 = Debug|x64
+		{A9864461-A475-40B8-A62E-54D04423D527}.Debug|x86.ActiveCfg = Debug|Win32
+		{A9864461-A475-40B8-A62E-54D04423D527}.Debug|x86.Build.0 = Debug|Win32
 		{A9864461-A475-40B8-A62E-54D04423D527}.Release|x64.ActiveCfg = Release|x64
 		{A9864461-A475-40B8-A62E-54D04423D527}.Release|x64.Build.0 = Release|x64
+		{A9864461-A475-40B8-A62E-54D04423D527}.Release|x86.ActiveCfg = Release|Win32
+		{A9864461-A475-40B8-A62E-54D04423D527}.Release|x86.Build.0 = Release|Win32
+		{D9F66F63-7A21-4176-8D63-861D3E5D17CE}.Debug|x64.ActiveCfg = Debug|x64
+		{D9F66F63-7A21-4176-8D63-861D3E5D17CE}.Debug|x64.Build.0 = Debug|x64
+		{D9F66F63-7A21-4176-8D63-861D3E5D17CE}.Debug|x86.ActiveCfg = Debug|Win32
+		{D9F66F63-7A21-4176-8D63-861D3E5D17CE}.Debug|x86.Build.0 = Debug|Win32
+		{D9F66F63-7A21-4176-8D63-861D3E5D17CE}.Release|x64.ActiveCfg = Release|x64
+		{D9F66F63-7A21-4176-8D63-861D3E5D17CE}.Release|x64.Build.0 = Release|x64
+		{D9F66F63-7A21-4176-8D63-861D3E5D17CE}.Release|x86.ActiveCfg = Release|Win32
+		{D9F66F63-7A21-4176-8D63-861D3E5D17CE}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
