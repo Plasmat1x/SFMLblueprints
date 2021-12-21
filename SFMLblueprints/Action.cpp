@@ -33,11 +33,11 @@ bool Action::operator==(const sf::Event& event) const
     {
     case sf::Event::EventType::KeyPressed:
     {
-        if (_type & Type::Pressed and _event.type == sf::Event::EventType::KeyPressed) res = event.key.code;
+        if (_type & Type::Pressed and _event.type == sf::Event::EventType::KeyPressed) res = event.key.code == _event.key.code;
     } break;
     case sf::Event::EventType::KeyReleased:
     {
-        if (_type & Type::Released and _event.type == sf::Event::EventType::KeyPressed) res = event.key.code;
+        if (_type & Type::Released and _event.type == sf::Event::EventType::KeyPressed) res = event.key.code == _event.key.code;
     } break;
     case sf::Event::EventType::MouseButtonPressed:
     {

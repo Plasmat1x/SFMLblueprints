@@ -132,9 +132,10 @@ void Configuration::initMusics()
 
 void Configuration::initPlayerInputs()
 {
-    playerInputs.map(PlayerInputs::Up, Action(sf::Keyboard::Up));
-    playerInputs.map(PlayerInputs::Left, Action(sf::Keyboard::Left));
-    playerInputs.map(PlayerInputs::Right, Action(sf::Keyboard::Right));
-    playerInputs.map(PlayerInputs::Hyperspace, Action(sf::Keyboard::Down, Action::Type::Released));
+    playerInputs.map(PlayerInputs::Up, Action(sf::Keyboard::W));
+    playerInputs.map(PlayerInputs::Left, Action(sf::Keyboard::A));
+    playerInputs.map(PlayerInputs::Right, Action(sf::Keyboard::D));
+    playerInputs.map(PlayerInputs::Down, Action(sf::Keyboard::S));
+    playerInputs.map(PlayerInputs::Hyperspace, Action(sf::Keyboard::R, Action::Type::Released));
     playerInputs.map(PlayerInputs::Shoot, Action(sf::Keyboard::Space));
 }

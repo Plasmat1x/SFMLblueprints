@@ -34,7 +34,7 @@ ShootPlayer::ShootPlayer(Player& from) :
     _duration = sf::seconds(5);
 
     float angle = from._sprite.getRotation() / 180 * M_PI - M_PI / 2;
-    _impulse = sf::Vector2f(std::cos(angle), std::sin(angle));
+    _impulse = sf::Vector2f(std::cos(angle), std::sin(angle)) * 500.f;
 
     setPosition(from.getPosition());
     _sprite.setRotation(from._sprite.getRotation());

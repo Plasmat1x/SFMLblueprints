@@ -11,7 +11,7 @@ public:
     Game& operator=(const Game&) = delete; //delete copy operator
     //make class noCopyable
     Game(int x = 1600, int y = 900);
-    void run(int frame_per_second);
+    void run(int frame_per_second = 30);
     void initLevel();
 
 private:

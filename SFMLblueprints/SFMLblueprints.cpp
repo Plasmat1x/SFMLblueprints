@@ -2,13 +2,15 @@
 //
 
 #include "Game.h"
+#include "ActionMap.h"
+#include "Configuration.h"
 
 int main(int argc, char* argv[])
 {
     Configuration::initialize();
 
-    Game game(800, 600);
-    game.run(60);
+    Game game;
+    game.run();
 
     return EXIT_SUCCESS;
 }

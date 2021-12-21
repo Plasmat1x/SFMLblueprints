@@ -15,6 +15,7 @@ Player::Player(World& world) :
     _rotation(0)
 {
     bind(Configuration::PlayerInputs::Up, [this](const sf::Event&) {_isMoving = true; });
+    bind(Configuration::PlayerInputs::Down, [this](const sf::Event&) {_isMovingBack = true; });
     bind(Configuration::PlayerInputs::Left, [this](const sf::Event&) {_rotation -= 1; });
     bind(Configuration::PlayerInputs::Right, [this](const sf::Event&) {_rotation += 1; });
     bind(Configuration::PlayerInputs::Shoot, [this](const sf::Event&) { shoot(); });
@@ -24,6 +25,7 @@ Player::Player(World& world) :
 void Player::processEvents()
 {
     _isMoving = false;
+    _isMovingBack = false;
     _rotation = 0;
     ActionTarget::processEvents();
 }
@@ -44,6 +46,11 @@ void Player::update(sf::Time deltaTime)
     {
         float angle = _sprite.getRotation() / 180 * M_PI - M_PI / 2;
         _impulse += sf::Vector2f(std::cos(angle), std::sin(angle)) * 300.f * seconds;
+    }
+    if (_isMovingBack)
+    {
+        float angle = _sprite.getRotation() / 180 * M_PI - M_PI / 2;
+        _impulse -= sf::Vector2f(std::cos(angle), std::sin(angle)) * 300.f * seconds;
     }
 
     _sprite.move(seconds * _impulse);

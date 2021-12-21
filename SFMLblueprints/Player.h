@@ -26,6 +26,7 @@ public:
 private:
 
     bool _isMoving;
+    bool _isMovingBack;
     int _rotation;
 
     sf::Time _timeSinceLastShoot;

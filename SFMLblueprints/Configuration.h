@@ -41,7 +41,8 @@ public:
     enum PlayerInputs : int { 
         Up, 
         Left, 
-        Right, 
+        Right,
+        Down,
         Shoot, 
         Hyperspace };
     static ActionMap<int> playerInputs;

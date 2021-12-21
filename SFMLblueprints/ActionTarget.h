@@ -66,8 +66,10 @@ template<typename T>
 void ActionTarget<T>::bind(const T& key, const FuncType& callback)
 {
     const Action& action = _actionMap.get(key);
-    if (action._type & Action::Type::RealTime) _eventsRealTime.emplace_back(key, callback);
-    else _eventsPoll.emplace_back(key, callback);
+    if (action._type & Action::Type::RealTime) 
+        _eventsRealTime.emplace_back(key, callback);
+    else 
+        _eventsPoll.emplace_back(key, callback);
 }
 
 template<typename T>
@@ -79,8 +81,10 @@ void ActionTarget<T>::unbind(const T& key)
     };
 
     const Action& action = _actionMap.get(key);
-    if (action._type & Action::Type::RealTime) _eventsRealTime.remove_if(remove_func);
-    else _eventsPoll.remove_if(remove_func);
+    if (action._type & Action::Type::RealTime) 
+        _eventsRealTime.remove_if(remove_func);
+    else 
+        _eventsPoll.remove_if(remove_func);
 }
 
 

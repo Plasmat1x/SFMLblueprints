@@ -56,8 +56,10 @@ void Game::initLevel()
     {
         Meteor* meteor = new BigMeteor(_world);
         do {
-            meteor->setPosition(random(0.f, (float)_world.getX()),
-                random(0.f, (float)_world.getY()));
+            meteor->setPosition(
+                random(0.f, (float)_world.getX()),
+                random(0.f, (float)_world.getY())
+            );
         } while (_world.isCollide(*meteor));
         _world.add(meteor);
     }
@@ -104,6 +106,7 @@ void Game::update(sf::Time deltaTime)
             Configuration::player->setPosition(_world.getX() / 2, _world.getY() / 2);
             _world.add(Configuration::player);
         }
+        _nextSaucer -= deltaTime;
 
         if (_nextSaucer < sf::Time::Zero)
         {
