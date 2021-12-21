@@ -1,36 +1,14 @@
 // SFMLblueprints.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
-#include <SFML/Window.hpp>
-#include <SFML/Graphics.hpp>
 
-#include <iostream>
+#include "Game.h"
 
-int mmain(int argc, char* argv[]) // test
+int main(int argc, char* argv[])
 {
-    sf::RenderWindow window(sf::VideoMode(400, 400), "StaR");
-    window.setFramerateLimit(60);
+    Configuration::initialize();
 
-    //create circle
-    sf::CircleShape circle(150);
-    circle.setFillColor(sf::Color::Blue);
-    circle.setPosition(10, 20);
-
-    //gameloop
-    while (window.isOpen())
-    {
-        //manage events
-        sf::Event event;
-        while (window.pollEvent(event))
-        {
-            if ((event.type == sf::Event::Closed)
-                or (event.type == sf::Event::KeyPressed
-                    and event.key.code == sf::Keyboard::Escape))
-                window.close();
-        }
-        window.clear();
-        window.draw(circle);
-        window.display();
-    }
+    Game game(800, 600);
+    game.run(60);
 
     return EXIT_SUCCESS;
 }

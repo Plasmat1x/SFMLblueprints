@@ -3,6 +3,7 @@
 
 #include <unordered_map>
 #include <memory>
+#include <string>
 
 template<typename RESOURCE, typename IDENTIFIER = int>
 class ResourceManager
@@ -38,7 +39,6 @@ private:
     std::unordered_map<IDENTIFIER, std::unique_ptr<sf::Music>> _map;
 };
 
-//#include "ResourceManager.tpl"
 #include <utility>
 #include <stdexcept>
 

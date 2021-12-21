@@ -1,7 +1,5 @@
 #include "Action.h"
 
-#include <memory> 
-
 Action::Action(const sf::Keyboard::Key& key, int type) : _type(type)
 {
     _event.type = sf::Event::EventType::KeyPressed;

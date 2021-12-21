@@ -164,20 +164,35 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Action.cpp" />
+    <ClCompile Include="Collision.cpp" />
     <ClCompile Include="Configuration.cpp" />
+    <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="Entity.cpp" />
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Meteor.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="ResourceManager.cpp" />
+    <ClCompile Include="Saucer.cpp" />
     <ClCompile Include="SFMLblueprints.cpp" />
+    <ClCompile Include="Shoot.cpp" />
+    <ClCompile Include="World.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Action.h" />
     <ClInclude Include="ActionMap.h" />
     <ClInclude Include="ActionTarget.h" />
+    <ClInclude Include="Collision.h" />
     <ClInclude Include="Configuration.h" />
+    <ClInclude Include="Enemy.h" />
+    <ClInclude Include="Entity.h" />
     <ClInclude Include="Game.h" />
+    <ClInclude Include="Meteor.h" />
     <ClInclude Include="Player.h" />
+    <ClInclude Include="random.h" />
     <ClInclude Include="ResourceManager.h" />
+    <ClInclude Include="Saucer.h" />
+    <ClInclude Include="Shoot.h" />
+    <ClInclude Include="World.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

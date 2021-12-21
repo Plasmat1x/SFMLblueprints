@@ -2,33 +2,29 @@
 #include <SFML/Window.hpp>
 #include <SFML/Graphics.hpp>
 
-#include "Player.h"
-#include "Configuration.h"
+#include "World.h"
 
 class Game
 {
 public:
-    Game(const Game&) = delete; //delete constructor
+    Game(const Game&) = delete; //delete constructor ??
     Game& operator=(const Game&) = delete; //delete copy operator
     //make class noCopyable
-    Game();
+    Game(int x = 1600, int y = 900);
     void run(int frame_per_second);
+    void initLevel();
 
 private:
+
     void processEvents();
     void update(sf::Time deltaTime);
     void render();
 
+    void reset();
+
     sf::RenderWindow _window;
-    Player _player;
+
+    World _world;
+    sf::Time _nextSaucer;
+    sf::Text _txt;
 };
-
-int main(int argc, char* argv[])
-{
-    Configuration::initialize();
-
-    Game game;
-    game.run(60);
-
-    return EXIT_SUCCESS;
-}

@@ -1,10 +1,9 @@
 #pragma once
-#include <SFML/Window.hpp>
 
 #include <functional>
+#include <utility>
 #include <list>
 
-#include "Action.h"
 #include "ActionMap.h"
 
 template<typename T = int>
@@ -30,8 +29,6 @@ private:
 
     const ActionMap<T>& _actionMap;
 };
-
-//#include "ActionTarget.tpl"
 
 template<typename T>
 ActionTarget<T>::ActionTarget(const ActionMap<T>& map) : _actionMap(map)
